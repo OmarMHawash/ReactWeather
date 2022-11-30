@@ -1,0 +1,95 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 1s ease-in;
+  background-color: #aaccf2;
+  color:black;
+}
+button,input{
+  border: none;
+}
+h2,h3,span{
+  font-weight: 500;
+}
+
+.app__header,
+.app__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app__main{
+  align-items: center;
+}
+
+/*  Search bar */
+.app__header {
+  background-color: #819cd7;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  input{
+    height: 30px;
+    padding: 5px 50px 5px 5px;
+    font-size: 1.2rem;
+    background-color: transparent;
+  }  
+  input::-webkit-input-placeholder {
+    color: white;
+  }
+  input:focus{
+    outline: none;
+  }
+  button{
+    padding: 14px;
+    margin-left: 5px;
+    background-color: #687ec6;
+    font-size: 0.9em;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  .header{
+    width: fit-content;
+    padding-left: 10px;
+  }
+}
+
+/* Current weather */
+.heading{
+  h3{
+    font-size: 1.2em;
+  }
+  h2{
+    color: white;
+  }
+  img{
+    width: 150px;
+    height: 150px;
+  }
+}
+.flex-text{
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+  margin: 0 auto;
+  p{
+    padding-right:10px ;
+    font-weight: 200;
+  }
+}
+
+/* Future weather */
+.weather-hourly-data{
+  display: flex;
+}
+.hour-data{
+  padding-right: 30px;
+  img{
+    width: 70px;
+    height: 70px;
+  }
+}
